@@ -1,11 +1,11 @@
 # ofxTick
 ofxTickは一定時間毎に動作する関数を実装するためのアドオンです。
 フレーム間の経過時間に対して短すぎる間隔である場合、その関数を1フレームで複数回実行し、その際の回数やデルタタイムなどを得ることができます。
-openFrameworks v0.10.1 以上で動作を確認しています。
+openFrameworks v0.10.1, v0.11.0 で動作を確認しています。
 
 ofxTick is an addon to implement a function that runs at regular intervals.
 If the interval is too short for the time between frames, the function can be called multiple times in a single frame to get the number of times, delta time, etc.
-It has been tested with openFrameworks v0.10.1 and above.
+It has been tested with openFrameworks v0.10.1, v0.11.0.
 
 # usage 使い方
 ```
