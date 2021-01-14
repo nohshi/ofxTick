@@ -101,13 +101,9 @@ public:
         prevIsActive = isActive;
     }
     
-    static inline void log(const Args & args) {
-        cout << "ofxTick:: numTasks:" << args.numTasks << ", taskId:" << args.taskId << ", elapsedTimef:" << args.elapsedTimef << ", deltaTime:" << args.deltaTime << endl;
-    }
+    static void log(const Args & args);
     
-    static inline void log(const Args & args, const string & identifier) {
-        cout << "ofxTick:" << identifier << ":: numTasks:" << args.numTasks << ", taskId:" << args.taskId << ", elapsedTimef:" << args.elapsedTimef << ", deltaTime:" << args.deltaTime << endl;
-    }
+    static void log(const Args & args, const string & identifier);
     
 protected:
     ofEvent<Args> event;
